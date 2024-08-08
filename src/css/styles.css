@@ -916,7 +916,9 @@ td {
   letter-spacing: -2.5px;
   text-transform: uppercase;
 
-  margin-bottom: 28px;
+  max-width: 345px;
+
+  margin: 0 auto 28px auto;
 }
 
 .questions-title span {
@@ -928,10 +930,11 @@ td {
 .questions-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
   max-width: 345px;
 
-  margin-bottom: 80px;
+  margin: 0 auto 80px auto;
 }
 
 .questions-item-svg {
