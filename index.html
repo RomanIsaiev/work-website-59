@@ -15,7 +15,9 @@
       <div class="container">
         <div class="course-desc-container">
           <p class="course-desc">15-дневный интенсив</p>
-          <p class="course-desc">старт 10 августа</p>
+          <p class="course-desc">
+            старт <span id="dateElement"></span> <span id="monthElement"></span>
+          </p>
         </div>
       </div>
     </header>
@@ -83,7 +85,7 @@
               Удаленно
             </li>
           </ul>
-          <a class="base-btn orange-btn" href=""
+          <a class="base-btn orange-btn" href="#buy"
             >Принять участие со скидкой 85%</a
           >
         </div>
@@ -197,7 +199,7 @@
               </p>
             </li>
           </ul>
-          <a class="base-btn blue-btn" href=""
+          <a class="base-btn blue-btn" href="#buy"
             >Принять участие со скидкой 85%</a
           >
         </div>
@@ -346,7 +348,7 @@
                 <td class="table-number">12</td>
                 <td class="table-text">Аккаунт-менеджмент</td>
               </tr>
-              <tr class="table-row">
+              <tr class="table-row" id="buy">
                 <td class="table-number">13</td>
                 <td class="table-text">
                   Экономика и unit-экономика. Бухгалтерия и финансовый учет.
@@ -411,13 +413,21 @@
       <section class="bonuses section">
         <div class="container">
           <div class="bonuses-title-container">
-            <h2 class="bonuses-item">ТРИ БОНУСА</h2>
+            <h2 class="bonuses-title">ТРИ БОНУСА</h2>
             <p class="bonuses-subtitle">при оплате в течении 3-х часов</p>
           </div>
           <ul class="bonuses-list">
             <li class="list-item">
               <picture
                 ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-image-desktop-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-image-desktop-01-2x.png 2x
+                  "
+                  width="322"
+                  height="284"
+                  media="(min-width: 1280px)" />
+                <source
                   srcset="
                     ./src/img/bonuses/bonus-mobile-01-1x.png 1x,
                     ./src/img/bonuses/bonus-mobile-01-2x.png 2x
@@ -447,6 +457,14 @@
               <picture
                 ><source
                   srcset="
+                    ./src/img/bonuses/bonus-image-desktop-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-image-desktop-02-2x.png 2x
+                  "
+                  width="322"
+                  height="284"
+                  media="(min-width: 1280px)" />
+                <source
+                  srcset="
                     ./src/img/bonuses/bonus-mobile-02-1x.png 1x,
                     ./src/img/bonuses/bonus-mobile-02-2x.png 2x
                   "
@@ -473,6 +491,14 @@
             <li class="list-item">
               <picture
                 ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-image-desktop-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-image-desktop-03-2x.png 2x
+                  "
+                  width="322"
+                  height="284"
+                  media="(min-width: 1280px)" />
+                <source
                   srcset="
                     ./src/img/bonuses/bonus-mobile-03-1x.png 1x,
                     ./src/img/bonuses/bonus-mobile-03-2x.png 2x
@@ -515,7 +541,7 @@
                 <div class="countdown-label seconds-label"></div>
               </div>
             </div>
-            <a class="base-btn orange-btn" href="">Забрать бонусы</a>
+            <a class="base-btn orange-btn" href="#buy">Забрать бонусы</a>
           </div>
         </div>
       </section>
@@ -554,9 +580,13 @@
               Разберетесь, какие риски бывают на Амазон и как их минимизировать
             </li>
           </ul>
-          <a class="base-btn blue-btn" href="">Купить со скидкой и бонусами</a>
+          <a class="base-btn blue-btn" href="#buy"
+            >Купить со скидкой и бонусами</a
+          >
         </div>
       </section>
+      <!-- width="260" -->
+      <!-- height="315" -->
       <section class="reviews section">
         <div class="container">
           <h2 class="reviews-title">Отзывы</h2>
@@ -566,8 +596,6 @@
                 <div class="video-wrapper">
                   <iframe
                     class="swiper-video"
-                    width="260"
-                    height="315"
                     src="https://www.youtube.com/embed/bRvYwLi1bt0?si=dIdnIcgMlpjjdKrP"
                     title="YouTube video player"
                     frameborder="0"
@@ -580,6 +608,14 @@
               <div class="swiper-slide">
                 <picture
                   ><source
+                    srcset="
+                      ./src/img/reviews/review-desktop-01-1x.png 1x,
+                      ./src/img/reviews/review-desktop-01-2x.png 2x
+                    "
+                    width="520"
+                    height="520"
+                    media="(min-width: 1280px)" />
+                  <source
                     srcset="
                       ./src/img/reviews/review-mobile-01-1x.png 1x,
                       ./src/img/reviews/review-mobile-01-2x.png 2x
@@ -598,6 +634,14 @@
                 <picture
                   ><source
                     srcset="
+                      ./src/img/reviews/review-desktop-02-1x.png 1x,
+                      ./src/img/reviews/review-desktop-02-2x.png 2x
+                    "
+                    width="520"
+                    height="520"
+                    media="(min-width: 1280px)" />
+                  <source
+                    srcset="
                       ./src/img/reviews/review-mobile-02-1x.png 1x,
                       ./src/img/reviews/review-mobile-02-2x.png 2x
                     "
@@ -614,6 +658,14 @@
               <div class="swiper-slide">
                 <picture
                   ><source
+                    srcset="
+                      ./src/img/reviews/review-desktop-03-1x.png 1x,
+                      ./src/img/reviews/review-desktop-03-2x.png 2x
+                    "
+                    width="520"
+                    height="520"
+                    media="(min-width: 1280px)" />
+                  <source
                     srcset="
                       ./src/img/reviews/review-mobile-03-1x.png 1x,
                       ./src/img/reviews/review-mobile-03-2x.png 2x
@@ -632,6 +684,14 @@
                 <picture
                   ><source
                     srcset="
+                      ./src/img/reviews/review-desktop-04-1x.png 1x,
+                      ./src/img/reviews/review-desktop-04-2x.png 2x
+                    "
+                    width="520"
+                    height="520"
+                    media="(min-width: 1280px)" />
+                  <source
+                    srcset="
                       ./src/img/reviews/review-mobile-04-1x.png 1x,
                       ./src/img/reviews/review-mobile-04-2x.png 2x
                     "
@@ -648,6 +708,14 @@
               <div class="swiper-slide">
                 <picture
                   ><source
+                    srcset="
+                      ./src/img/reviews/review-desktop-05-1x.png 1x,
+                      ./src/img/reviews/review-desktop-05-2x.png 2x
+                    "
+                    width="520"
+                    height="520"
+                    media="(min-width: 1280px)" />
+                  <source
                     srcset="
                       ./src/img/reviews/review-mobile-05-1x.png 1x,
                       ./src/img/reviews/review-mobile-05-2x.png 2x
@@ -1006,7 +1074,7 @@
     <footer class="footer section">
       <div class="container">
         <div class="footer-deals">
-          <ul class="deals-list list">
+          <ul class="deals-list">
             <li class="list-item">
               <a class="link" href="" target="_blank" rel="nofollow"
                 >Договор оферта</a
@@ -1059,12 +1127,12 @@
           <p class="fop-name">ФЛП Слободянюк А.В</p>
         </div>
         <a
-          class="disign-creator-link link"
+          class="disign-creator-link"
           href="https://www.instagram.com/lllcku"
           target="_blank"
           rel="nofollow"
           ><div class="disign-creator">
-            <p class="create-by-text">Сайт розроблений</p>
+            <p class="create-by-text">Сайт создан</p>
             <img
               class="insta-icon"
               src="./src/img/insta-icon.svg"
@@ -1080,5 +1148,7 @@
     <script src="./src/js/timer.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
     <script src="./src/js/questions.js" type="module"></script>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src/js/scroll.js" type="module"></script>
   </body>
 </html>
