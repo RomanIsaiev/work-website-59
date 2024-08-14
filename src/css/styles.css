@@ -1216,6 +1216,10 @@ td {
   max-width: 430px;
   padding: 0;
 
+  @media (768px<=width) {
+    max-width: 768px;
+  }
+
   @media (1280px<=width) {
     max-width: 1280px;
   }
@@ -1227,6 +1231,10 @@ td {
 
 .mySwiper1 {
   max-width: 430px;
+
+  @media (768px<=width) {
+    max-width: 768px;
+  }
 
   @media (1280px<=width) {
     max-width: 780px;
@@ -1258,7 +1266,7 @@ td {
 }
 
 .video-wrapper {
-  max-width: 260px;
+  max-width: 320px;
   margin: 0 auto;
 
   @media (1280px<=width) {
@@ -1267,6 +1275,14 @@ td {
 }
 
 .swiper-video {
+  width: 320px;
+  height: 600px;
+
+  @media (768px<=width) {
+    width: 320px;
+    height: 600px;
+  }
+
   @media (1280px<=width) {
     width: 450px;
     height: 800px;
@@ -1304,8 +1320,13 @@ td {
 }
 
 .swiper-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
+
+  @media (768px<=width) {
+    width: 36px;
+    height: 36px;
+  }
 
   @media (1280px<=width) {
     width: 40px;
@@ -1359,6 +1380,10 @@ td {
   @media (1280px<=width) {
     max-width: 624px;
   }
+}
+
+.questions-item {
+  cursor: pointer;
 }
 
 .questions-item-svg {
