@@ -275,7 +275,7 @@
           </div>
         </div>
       </section>
-      <section class="intensive-program section">
+      <section class="intensive-program section" id="buy">
         <div class="container">
           <h2 class="intensive-program-title">Программа интенсива</h2>
           <div class="table-wrapper">
@@ -385,7 +385,11 @@
               Успейте присоединиться к интенсиву всего за 
             </h3>
             <p class="price"><span>60$</span>&nbsp; 9$</p>
-            <button class="base-btn orange-btn buy-btn" type="button">
+            <button
+              class="base-btn orange-btn buy-btn"
+              type="button"
+              data-modal-open
+            >
               Принять участие со скидкой 85%
             </button>
           </div>
@@ -585,8 +589,6 @@
           >
         </div>
       </section>
-      <!-- width="260" -->
-      <!-- height="315" -->
       <section class="reviews section">
         <div class="container">
           <h2 class="reviews-title">Отзывы</h2>
@@ -1076,12 +1078,20 @@
         <div class="footer-deals">
           <ul class="deals-list">
             <li class="list-item">
-              <a class="link" href="" target="_blank" rel="nofollow"
+              <a
+                class="link"
+                href="https://docs.google.com/document/d/1Kr1D2DHQyiDYpLodMlMS4ANGf_hUnZw68qAbVNFsjH8/edit?usp=sharing"
+                target="_blank"
+                rel="nofollow"
                 >Договор оферта</a
               >
             </li>
             <li class="list-item">
-              <a class="link" href="" target="_blank" rel="nofollow"
+              <a
+                class="link"
+                href="https://docs.google.com/document/d/1uEhV8sghM09K2x9Ya5JVnU9lyEvptxO2HdaWInJ4p4E/edit?usp=sharing"
+                target="_blank"
+                rel="nofollow"
                 >Политика конфидициональности</a
               >
             </li>
@@ -1145,10 +1155,28 @@
         </a>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="40"
+            height="40"
+            alt="close"
+          />
+        </button>
+        <div id="kwiga-widget-1723655966000"></div>
+      </div>
+    </div>
     <script src="./src/js/timer.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
     <script src="./src/js/questions.js" type="module"></script>
     <script src="./src/js/changeDate.js" type="module"></script>
     <script src="./src/js/scroll.js" type="module"></script>
+    <script src="./src/js/js-modal.js" type="module"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1723655966000&uuid=97a504e3-49f4-47d3-a7e9-61b2a4333889&producer=https://kwiga.com/"
+    ></script>
   </body>
 </html>
