@@ -382,13 +382,13 @@
           </div>
           <div class="buy-wrapper">
             <h3 class="buy-title">
-              Успейте присоединиться к интенсиву всего за 
+              Успейте присоединиться к интенсиву всего за
             </h3>
             <p class="price"><span>60$</span>&nbsp; 9$</p>
             <button
               class="base-btn orange-btn buy-btn"
               type="button"
-              data-widget-handler="1723656117000"
+              data-modal-open
             >
               Принять участие со скидкой 85%
             </button>
@@ -1155,7 +1155,21 @@
         </a>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="40"
+            height="40"
+            alt="close"
+          />
+        </button>
+        <div id="kwiga-widget-1723656117000"></div>
+      </div>
+    </div>
     <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/js-modal.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
     <script src="./src/js/questions.js" type="module"></script>
     <script src="./src/js/changeDate.js" type="module"></script>
