@@ -1666,6 +1666,7 @@ body.modal-open {
 
   max-width: 350px;
   height: 95%;
+  max-height: 760px;
 
   border-radius: 20px;
   background: #ffffff;
@@ -1675,6 +1676,11 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   overflow-y: scroll;
+
+  @media (width >= 600px) {
+    max-width: 600px;
+    overflow-y: hidden;
+  }
 
   @media (width >= 768px) {
     max-width: 720px;
