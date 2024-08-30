@@ -85,9 +85,9 @@
               Удаленно
             </li>
           </ul>
-          <a class="base-btn orange-btn" href="#buy"
-            >Принять участие со скидкой 85%</a
-          >
+          <button class="base-btn orange-btn" data-modal-open>
+            Принять участие со скидкой 85%
+          </button>
         </div>
       </section>
       <section class="your-intensive section">
@@ -199,9 +199,9 @@
               </p>
             </li>
           </ul>
-          <a class="base-btn blue-btn" href="#buy"
-            >Принять участие со скидкой 85%</a
-          >
+          <button class="base-btn blue-btn" data-modal-open>
+            Принять участие со скидкой 85%
+          </button>
         </div>
       </section>
       <section class="about-author">
@@ -266,11 +266,16 @@
           <div class="how-study-wrapper">
             <h2 class="how-study-title">Как происходит обучение</h2>
             <p class="how-study-text">
-              Обучение будет проходить на обучающей платформе KWIGA, доступ к
-              которой вы получите на почту сразу же после оплаты пакета участия
-              на email указанный при оплате. После получения доступа вам будут
-              доступны все уроки курса и вы сможете его пройти в комфортном для
-              вас режиме
+              Обучение будет проходить на обучающей платформе KWIGA. Доступ к
+              интенсиву вы получите сразу же после оплаты на email, указанный
+              при заполнении формы регистрации. После получения доступа - вам
+              будут доступны все уроки курса и вы сможете его пройти в
+              комфортном для вас режиме. Также вы получите доступ к telegram
+              чату с другими учасниками интенсива, в который сможете задавать
+              вопросы. <br />
+              <br />
+              Срок доступа к материалам интенсива - <br />
+              <span>60 дней.</span>
             </p>
           </div>
         </div>
@@ -278,107 +283,648 @@
       <section class="intensive-program section" id="buy">
         <div class="container">
           <h2 class="intensive-program-title">Программа интенсива</h2>
-          <div class="table-wrapper">
-            <table>
-              <tr class="table-row">
-                <td class="table-number">1</td>
-                <td class="table-text top-right">
-                  Какие бизнес возможности предоставляет Амазон. Обзор основных
-                  бизнес-моделей
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">2</td>
-                <td class="table-text">
-                  Этапы создания Resale-бизнеса на Амазон
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">3</td>
-                <td class="table-text">
-                  Выбор рынка, ниши и юридической структуры
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">4</td>
-                <td class="table-text">
-                  Регистрация компании и банковского счета
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">5</td>
-                <td class="table-text">
-                  Регистрация и настройка аккаунта на Амазон
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">6</td>
-                <td class="table-text">
-                  Анализ брендов и товаров, которые подходят под Resale. Как
-                  определять объем продаж и рассчитывать прибыль
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">7</td>
-                <td class="table-text">
-                  Поиск товаров, брендов и оптовых поставщиков
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">8</td>
-                <td class="table-text">
-                  Открытие оптовых аккаунтов у поставщиков
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">9</td>
-                <td class="table-text">
-                  Заполнение форм и анализ прайс-листов
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">10</td>
-                <td class="table-text">Закупки и логистика до Амазон</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">11</td>
-                <td class="table-text">Управление продажами на Амазон</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">12</td>
-                <td class="table-text">Аккаунт-менеджмент</td>
-              </tr>
-              <tr class="table-row" id="buy">
-                <td class="table-number">13</td>
-                <td class="table-text">
-                  Экономика и unit-экономика. Бухгалтерия и финансовый учет.
-                  Налоги
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">14</td>
-                <td class="table-text">
-                  Риски и как их минимизировать. Важные нюансы и рекомендации
-                  при торговле на Амазон
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">15</td>
-                <td class="table-text">
-                  Выводы и что делать дальше. План выхода на 5 тыс дол в месяц
-                </td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-number">+</td>
-                <td class="table-text">
-                  Telegram чат группы с доп.активностями и рекомендациями
-                </td>
-              </tr>
-              <tr class="table-row last-row">
-                <td class="table-number">60 дней</td>
-                <td class="table-text">Срок доступа к материалам</td>
-              </tr>
-            </table>
+          <div class="program-container">
+            <ul class="program-list list">
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 1</span>
+                      <span class="item-lesson themes">теми: 4</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Бизнес возможности</span>
+                    на Амазон
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Про Амазон, как маркетплейс.
+                        Преимущества бизнеса на Амазон
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Нетоварные модели бизнеса на Амазон
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Обзор Private Label
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Resale бизнес на Amazon
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Разберетесь, какие варианты
+                        бизнеса существуют на Амазон, а также какие у них
+                        преимущества и недостатки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 2</span>
+                      <span class="item-lesson themes">теми: 3</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Варианты и этапы запуска </span>
+                    Resale бизнеса на Amazon
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Обзор 4 вариантов Resale бизнеса,
+                        их преимущества и недостатки
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Перспективы Resale бизнеса
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Дорожная карта запуска Resale
+                        бизнеса на Amazon
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Подберете для себя оптимальный
+                        вариант бизнеса на Амазон и поймете, какие этапы вам
+                        нужно пройти для его запуска.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 3</span>
+                      <span class="item-lesson themes">теми: 3</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Выбор рынка, ниши</span>
+                    и юридической структуры
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Особенности рынков Amazon США,
+                        Великобритании, Германии и с какого рынка лучше
+                        начинать.
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Обзор ниш на Амазон и с каких лучше
+                        начинать
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Выбор юрисдикции для регистрации
+                        компании
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Определитесь с наиболее
+                        подходящим для вас рынком, нишей и юридической
+                        структурой для бизнеса на Амазон
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 4</span>
+                      <span class="item-lesson themes">теми: 4</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Регистрация компании </span>
+                    и банковского счета
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Варианты и общий алгоритм
+                        регистрации компании
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Особенности регистрации компании в
+                        США
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Особенности регистрации компании в
+                        Великобритании
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Обзор популярных платежных систем,
+                        которые подходят для Amazon
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Узнаете важные нюансы и получите
+                        пошаговый алгоритм регистрации компании в США и
+                        Великобритании. Разберетесь с подходящими платежными
+                        системами.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 5</span>
+                      <span class="item-lesson themes">теми: 3</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Регистрация и настройка аккаунта </span>
+                    на Amazon
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Подготовка к регистрации аккаунта
+                        на Amazon
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Обзор процесса регистрации аккаунта
+                        и важных моментов
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Настройка аккаунта на Amazon после
+                        регистрации
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Сможете самостоятельно
+                        зарегистрировать и настроить аккаунт на Amazon.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 6</span>
+                      <span class="item-lesson themes">теми: 8</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Анализ брендов и товаров, </span>
+                    которые подходят под Resale бизнес
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Основы и важные термины
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Критерии подходящих товаров для
+                        продажи на Amazon
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> BuyBox и что влияет на его
+                        получение
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Анализ продаж с помощью Keepa
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 5.</span> Особенности анализа вариаций
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 6.</span> Сеты и бандлы: что это и как с ними
+                        работать
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 7.</span> Критерии выбора подходящих брендов
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 8.</span> Unit-экономика Resale-бизнеса в
+                        США, Великобритании и ЕС
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Разберетесь какие бренды и
+                        товары подходят для торговли на Amazon, научитесь их
+                        правильно анализировать.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 7</span>
+                      <span class="item-lesson themes">теми: 5</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Поиск товаров, брендов </span>
+                    и оптовых поставщиков
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Типы поставщиков
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Как отличить оптовика от
+                        дистрибьютора
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Подход от поставщиков к брендам
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Подход от брендов к поставщикам
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 5.</span> Ресерч товаров для продажи на
+                        Amazon
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Узнаете какие поставщики
+                        подойдут для Resale бизнеса и научитесь их правильно 
+                        искать
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 8</span>
+                      <span class="item-lesson themes">теми: 5</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Открытие оптовых аккаунтов </span>
+                    у поставщиков
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Что надо подготовить перед тем, как
+                        обратится к поставщику
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Важная терминология для общения с
+                        поставщиками
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Детальный обзор процесса открытия
+                        оптовых аккаунтов у поставщиков
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Что делать с поставщиками, которые
+                        не отвечают
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 5.</span> Структура письма поставщикам
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Получите чек-лист готовности к
+                        открытию оптовых аккаунтов и узнаете, как грамотно
+                        коммуницировать с поставщиками.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 9</span>
+                      <span class="item-lesson themes">теми: 3</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Заполнение форм </span>
+                    и анализ товаров
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Нюансы заполнения форм поставщика
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Как анализировать прайс-листы
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Сложности в открытии поставщиков и
+                        поиске прибыльных товаров
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Узнаете как правильно заполнять
+                        формы поставщиков и разберетесь, как анализировать
+                        прайс-листы и находить прибыльные товары
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 10</span>
+                      <span class="item-lesson themes">теми: 4</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Закупки и логистика </span>
+                    до Amazon
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Бизнес-процесс закупки товаров и
+                        доставки на Amazon
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Потенциальные проблемы и что ними
+                        делать
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Важные моменты по выбору
+                        преп-центра
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Подготовка товаров и отправка на
+                        склады Amazon
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Разберетесь с процессом и
+                        нюансами закупок и доставки на Amazon
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 11</span>
+                      <span class="item-lesson themes">теми: 4</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Управление продажами </span>
+                    на Амазон
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Особенности продажи товаров через
+                        FBA и FBM
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Управление ценами на Amazon
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Возвраты и возмещения клиентам
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Возникающие проблемы и как их
+                        решать
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Разберетесь с особенностями
+                        продажи через FBA и FBM, определитесь какой из вариантов
+                        вам больше подходит, узнаете как решать возникающие
+                        проблемы с заказами.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 12</span>
+                      <span class="item-lesson themes">теми: 4</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Аккаунт-менеджмент</span>
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Коммуникация с покупателями
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Removal orders
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Работа с отзывами
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Метрики аккаунта и как их
+                        поддерживать должным образом
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Узнаете как правильно
+                        коммуницировать с покупателями и поддерживать метрики
+                        аккаунта на высоком уровне.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 13</span>
+                      <span class="item-lesson themes">теми: 5</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Бухгалтерия,</span>
+                    фин учет и налоги
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Отчеты, доступные в Seller Central
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Финансовый учет и основные
+                        показатели
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Программы и инструменты для фин
+                        учета и бухгалтерии
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 4.</span> Особенности бухгалтерии для Amazon
+                        бизнеса
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 5.</span> Налоги и отчеты
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Разберетесь с особенностями
+                        финансового учета и бухгалтерии бизнеса на Amazon.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 14</span>
+                      <span class="item-lesson themes">теми: 3</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Риски </span>
+                    и как их минимизировать.
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> За что могут забанить аккаунт и как
+                        этого избежать
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Какие еще бывают риски на Амазон
+                        показатели
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> Как минимизировать риски
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> Узнаете какие бывают риски на
+                        Amazon и как их минимизировать
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="program-list-item">
+                <div class="item-title-container">
+                  <div class="program-list-item-container">
+                    <div class="lesson-counter-container">
+                      <span class="item-lesson lesson">урок 15</span>
+                      <span class="item-lesson themes">теми: 3</span>
+                    </div>
+                    <div class="close-icon-box"></div>
+                  </div>
+                  <h3 class="program-list-item-title">
+                    <span>Выводы и что делать дальше.</span>
+                    План выхода на 5 тыс дол в месяц.
+                  </h3>
+                </div>
+                <div class="program-answer-wrapper">
+                  <div class="program-answer-item-wrapper">
+                    <ul class="modules-list">
+                      <li class="list-item">
+                        <span>Тема 1.</span> Выводы и рекомендации
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 2.</span> Что делать дальше?
+                      </li>
+                      <li class="list-item">
+                        <span>Тема 3.</span> План выхода на 5+ тыс дол в месяц
+                      </li>
+                    </ul>
+                    <div class="result-container">
+                      <p class="result-text">
+                        <span>Результат:</span> У вас сложится четкое видение,
+                        как выйти на 5 тыс долларов и более.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="access-wrapper">
+            <p class="access-text">Срок доступа - 60 дней</p>
           </div>
           <div class="buy-wrapper">
             <h3 class="buy-title">
@@ -545,7 +1091,9 @@
                 <div class="countdown-label seconds-label"></div>
               </div>
             </div>
-            <a class="base-btn orange-btn" href="#buy">Забрать бонусы</a>
+            <button class="base-btn orange-btn" data-modal-open>
+              Забрать бонусы
+            </button>
           </div>
         </div>
       </section>
@@ -584,9 +1132,9 @@
               Разберетесь, какие риски бывают на Амазон и как их минимизировать
             </li>
           </ul>
-          <a class="base-btn blue-btn" href="#buy"
-            >Купить со скидкой и бонусами</a
-          >
+          <button class="base-btn blue-btn" data-modal-open>
+            Купить со скидкой и бонусами
+          </button>
         </div>
       </section>
       <section class="reviews section">
@@ -1171,9 +1719,10 @@
     <script src="./src/js/timer.js" type="module"></script>
     <script src="./src/js/js-modal.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/program.js" type="module"></script>
     <script src="./src/js/questions.js" type="module"></script>
     <script src="./src/js/changeDate.js" type="module"></script>
-    <script src="./src/js/scroll.js" type="module"></script>
+
     <script
       type="module"
       src="https://kwiga.com/build/js/kwiga-widget.js?t=1723656117000&uuid=97a504e3-49f4-47d3-a7e9-61b2a4333889&is_modal=true&producer=https://kwiga.com/"
