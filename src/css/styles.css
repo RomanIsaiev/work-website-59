@@ -35,7 +35,7 @@
 
 .course-desc-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 
   max-width: 430px;
@@ -58,6 +58,11 @@
   @media (1280px<=width) {
     font-size: 18px;
   }
+}
+
+.course-desc .color {
+  font-weight: 500;
+  color: #f90;
 }
 
 /* hero */
